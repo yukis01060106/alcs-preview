@@ -59,8 +59,9 @@ a:hover .img-zoom,.biz-row:hover .img-zoom,.message__photo:hover .img-zoom{trans
 /* reveal animation */
 .reveal{opacity:0;transform:translateY(48px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease)}
 .reveal.is-in{opacity:1;transform:none}
-.about__img.reveal,.biz-row__img.reveal,.message__photo.reveal{clip-path:inset(0 0 100% 0);transform:none;opacity:1;transition:clip-path 1.4s var(--ease)}
-.about__img.reveal.is-in,.biz-row__img.reveal.is-in,.message__photo.reveal.is-in{clip-path:inset(0 0 0 0)}
+.about__img.reveal,.biz-row__img.reveal,.message__photo.reveal{transform:none;opacity:1}
+.about__img.reveal > .img-zoom,.biz-row__img.reveal > .img-zoom,.message__photo.reveal > .img-zoom{clip-path:inset(0 0 100% 0);transition:clip-path 1.4s var(--ease),transform 1.4s var(--ease)}
+.about__img.reveal.is-in > .img-zoom,.biz-row__img.reveal.is-in > .img-zoom,.message__photo.reveal.is-in > .img-zoom{clip-path:inset(0 0 0 0)}
 
 /* ---------- logo ---------- */
 .logo{display:inline-flex;align-items:center;gap:14px}
@@ -343,7 +344,7 @@ a:hover .img-zoom,.biz-row:hover .img-zoom,.message__photo:hover .img-zoom{trans
 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
-  .reveal{opacity:1;transform:none;clip-path:none!important}
+  .reveal,.reveal > .img-zoom{opacity:1;transform:none;clip-path:none!important}
 }
 
 /* =========================================================
