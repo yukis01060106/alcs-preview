@@ -215,7 +215,6 @@ a:hover .img-zoom,.biz-row:hover .img-zoom,.message__photo:hover .img-zoom{trans
 .message{padding:180px 0}
 .message__grid{display:grid;grid-template-columns:1fr 1fr;align-items:center}
 .message__photo{position:relative;height:clamp(560px,56vw,820px);overflow:hidden}
-.message__photo .img-zoom{background-position:center 20%}
 .message__tag{position:absolute;right:16px;bottom:12px;font-size:11px;color:rgba(255,255,255,.8)}
 .message__body{padding:0 max(60px,calc((100vw - 1280px)/2)) 0 100px}
 .message__lead{font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.5vw,38px);line-height:1.6;letter-spacing:.1em;margin:50px 0 40px;color:var(--ink)}
@@ -379,7 +378,7 @@ a:hover .img-zoom,.biz-row:hover .img-zoom,.message__photo:hover .img-zoom{trans
   .biz-row__body,.biz-row--rev .biz-row__body{padding:56px 32px 0}
   .biz-row__img{height:56vw}
   .message__grid{grid-template-columns:1fr}
-  .message__photo{height:70vw;max-height:640px}
+  .message__photo{height:auto;aspect-ratio:1/1;max-height:720px}
   .message__body{padding:80px 32px 0}
   .news__grid,.company__grid,.contact__inner,.about__grid{grid-template-columns:1fr;gap:56px}
   .about__img{position:relative;top:0;aspect-ratio:16/10}
