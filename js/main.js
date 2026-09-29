@@ -27,7 +27,7 @@
   const bars = document.querySelectorAll('.hero__bars i');
   const num = document.getElementById('heroNum');
   let cur = 0;
-  setInterval(() => {
+  if (slides.length > 1) setInterval(() => {
     slides[cur].classList.remove('is-active');
     bars[cur].classList.remove('is-active');
     bars[cur].classList.add('is-done');
@@ -75,7 +75,7 @@
 
   // Case slider buttons
   const track = document.getElementById('caseTrack');
-  document.querySelectorAll('.slider-btn').forEach(btn => btn.addEventListener('click', () => {
+  if (track) document.querySelectorAll('.slider-btn').forEach(btn => btn.addEventListener('click', () => {
     const card = track.querySelector('.case');
     track.scrollBy({ left: (card.offsetWidth + 32) * +btn.dataset.dir, behavior: 'smooth' });
   }));

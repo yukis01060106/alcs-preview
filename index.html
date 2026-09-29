@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
@@ -33,10 +33,10 @@
                 <a href="#business" class="link-arrow">事業内容トップ</a>
               </div>
               <ul class="mega__list">
-                <li><a href="#biz01"><span class="mega__img" style="background-image:url(images/biz01.jpg)"></span><span>01</span>人材アウトソーシング</a></li>
-                <li><a href="#biz02"><span class="mega__img" style="background-image:url(images/biz02.jpg)"></span><span>02</span>採用／営業／DX伴走支援</a></li>
-                <li><a href="#biz03"><span class="mega__img" style="background-image:url(images/biz03.jpg)"></span><span>03</span>通信イベント事業</a></li>
-                <li><a href="#biz04"><span class="mega__img" style="background-image:url(images/biz04.jpg)"></span><span>04</span>施工管理事業</a></li>
+                <li><a href="business/hr-outsourcing.html"><span class="mega__img" style="background-image:url(images/biz01.jpg)"></span><span>01</span>人材アウトソーシング</a></li>
+                <li><a href="business/growth-support.html"><span class="mega__img" style="background-image:url(images/biz02.jpg)"></span><span>02</span>採用／営業／DX伴走支援</a></li>
+                <li><a href="business/telecom-event.html"><span class="mega__img" style="background-image:url(images/biz03.jpg)"></span><span>03</span>通信イベント事業</a></li>
+                <li><a href="business/construction.html"><span class="mega__img" style="background-image:url(images/biz04.jpg)"></span><span>04</span>施工管理事業</a></li>
               </ul>
             </div>
           </div>
@@ -85,6 +85,32 @@
   <div class="hero__scroll"><span>Scroll</span></div>
 </section>
 
+<!-- ============ NEWS ============ -->
+<section class="news" id="news">
+  <div class="container news__grid">
+    <div class="news__head reveal">
+      <p class="label">News</p>
+      <h2 class="sec-title">ニュース</h2>
+      <a href="#" class="link-arrow">ニュース一覧へ</a>
+    </div>
+    <div class="news__body reveal">
+      <div class="news__tabs" role="tablist">
+        <button class="is-active" data-cat="all">すべて</button>
+        <button data-cat="info">お知らせ</button>
+        <button data-cat="biz">事業</button>
+        <button data-cat="press">プレスリリース</button>
+      </div>
+      <ul class="news__list" id="newsList">
+        <li data-cat="info"><a href="#"><time>2026.09.29</time><span class="news__cat">お知らせ</span><span class="news__title">コーポレートサイトをリニューアルしました</span></a></li>
+        <li data-cat="biz"><a href="#"><time>2026.09.29</time><span class="news__cat">事業</span><span class="news__title">事業領域を「人材アウトソーシング」「採用/営業/DX伴走支援」「通信イベント事業」「施工管理事業」の4事業に再編しました</span></a></li>
+        <li data-cat="press"><a href="#"><time>2026.00.00</time><span class="news__cat">プレスリリース</span><span class="news__title">【ダミー】業界特化型採用BPO「建設/採用部」のサービス内容を拡充</span></a></li>
+        <li data-cat="info"><a href="#"><time>2026.00.00</time><span class="news__cat">お知らせ</span><span class="news__title">【ダミー】協業エージェントの募集を開始しました</span></a></li>
+        <li data-cat="biz"><a href="#"><time>2026.00.00</time><span class="news__cat">事業</span><span class="news__title">【ダミー】通信イベント事業の対応エリアを拡大しました</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- ============ ABOUT / MISSION ============ -->
 <section class="about" id="about">
   <div class="container">
@@ -125,7 +151,7 @@
   </div>
 
   <div class="biz-tiles">
-    <a href="#biz01" class="biz-tile reveal">
+    <a href="business/hr-outsourcing.html" class="biz-tile reveal">
       <div class="biz-tile__img" style="background-image:url(images/biz01.jpg);background-position:30% 85%"></div>
       <div class="biz-tile__body">
         <p class="biz-tile__num">01</p>
@@ -134,7 +160,7 @@
         <p class="biz-tile__text">現場を動かすプロ人材を、必要なときに必要なだけ。</p>
       </div>
     </a>
-    <a href="#biz02" class="biz-tile reveal">
+    <a href="business/growth-support.html" class="biz-tile reveal">
       <div class="biz-tile__img" style="background-image:url(images/biz02.jpg)"></div>
       <div class="biz-tile__body">
         <p class="biz-tile__num">02</p>
@@ -143,7 +169,7 @@
         <p class="biz-tile__text">仕組みができるまで、隣で走る伴走型支援。</p>
       </div>
     </a>
-    <a href="#biz03" class="biz-tile reveal">
+    <a href="business/telecom-event.html" class="biz-tile reveal">
       <div class="biz-tile__img" style="background-image:url(images/biz03.jpg)"></div>
       <div class="biz-tile__body">
         <p class="biz-tile__num">03</p>
@@ -152,7 +178,7 @@
         <p class="biz-tile__text">商業施設の一角を、最も成果の出る売り場に。</p>
       </div>
     </a>
-    <a href="#biz04" class="biz-tile reveal">
+    <a href="business/construction.html" class="biz-tile reveal">
       <div class="biz-tile__img" style="background-image:url(images/biz04.jpg)"></div>
       <div class="biz-tile__body">
         <p class="biz-tile__num">04</p>
@@ -163,85 +189,6 @@
     </a>
   </div>
 
-  <!-- detail rows -->
-  <div class="biz-details">
-    <article class="biz-row" id="biz01">
-      <div class="biz-row__img reveal"><div class="img-zoom" style="background-image:url(images/biz01.jpg)"></div></div>
-      <div class="biz-row__body reveal">
-        <p class="biz-row__num"><span>01</span>HR Outsourcing</p>
-        <h3 class="biz-row__title">人材アウトソーシング</h3>
-        <p class="biz-row__catch">必要なときに、必要な“戦力”を。</p>
-        <p class="biz-row__text">繁忙期の販促体制や営業リソースの不足を、教育されたプロフェッショナル人材によるチーム編成で解決。人を送り出すだけでなく、1日単位のKPI設計や現場マネジメントまで含めて請け負い、成果に責任を持つアウトソーシングを提供します。</p>
-        <ul class="biz-row__list">
-          <li>販促・プロモーション人材のチーム派遣</li>
-          <li>営業BPO（インサイド／フィールドセールス）</li>
-          <li>現場KPI設計・マネジメント代行</li>
-        </ul>
-        <dl class="biz-row__kpi">
-          <div><dt>売上</dt><dd>×2.4</dd><p>家電量販 全国チェーン様</p></div>
-          <div><dt>社内工数</dt><dd>−40%</dd><p>人材業界 中堅エージェント様</p></div>
-        </dl>
-      </div>
-    </article>
-
-    <article class="biz-row biz-row--rev" id="biz02">
-      <div class="biz-row__img reveal"><div class="img-zoom" style="background-image:url(images/biz02.jpg)"></div></div>
-      <div class="biz-row__body reveal">
-        <p class="biz-row__num"><span>02</span>Recruiting / Sales / DX</p>
-        <h3 class="biz-row__title">採用／営業／DX伴走支援</h3>
-        <p class="biz-row__catch">採用は経営。営業は科学。</p>
-        <p class="biz-row__text">事業戦略と連動した採用設計、属人化から脱却する営業プロセスの構築、そして業務を変えるDX。コンサルティングで終わらせず、実行・定着まで伴走します。業界特化型の採用BPOなど、自社プロダクトも展開しています。</p>
-        <ul class="biz-row__list biz-row__list--col">
-          <li><b>採用</b>採用戦略設計／採用BPO／採用サイト・記事制作／定着支援</li>
-          <li><b>営業</b>営業プロセス設計／12週間伴走プログラム／営業組織のPDCA構築</li>
-          <li><b>DX</b>業務効率化システム開発／Web制作／集客プラットフォーム改善</li>
-        </ul>
-        <dl class="biz-row__kpi">
-          <div><dt>応募数</dt><dd>×4.5</dd><p>保育業界 社会福祉法人様</p></div>
-          <div><dt>商談化率</dt><dd>×2.0</dd><p>SaaS業界 シリーズB企業様</p></div>
-          <div><dt>業務時間</dt><dd>−62%</dd><p>不動産業界 中堅デベロッパー様</p></div>
-        </dl>
-      </div>
-    </article>
-
-    <article class="biz-row" id="biz03">
-      <div class="biz-row__img reveal"><div class="img-zoom" style="background-image:url(images/biz03.jpg)"></div></div>
-      <div class="biz-row__body reveal">
-        <p class="biz-row__num"><span>03</span>Telecom Event</p>
-        <h3 class="biz-row__title">通信イベント事業</h3>
-        <p class="biz-row__catch">商業施設の一角を、最も成果の出る売り場に。</p>
-        <p class="biz-row__text">大手通信キャリア様の商業施設・家電量販店でのイベント販売を、企画から運営まで一貫して担います。立ち位置・トーク・クロージングまでを最適化したチーム制の運営で、新規回線契約の獲得数とコスト効率を同時に改善します。</p>
-        <ul class="biz-row__list">
-          <li>商業施設・量販店でのキャリアイベント企画／運営</li>
-          <li>イベントスタッフのアサイン・育成・チーム運営</li>
-          <li>獲得データの分析と施策改善</li>
-        </ul>
-        <dl class="biz-row__kpi">
-          <div><dt>契約獲得数</dt><dd>×3.1</dd><p>通信業界 大手キャリア様</p></div>
-          <div><dt>獲得コスト</dt><dd>−22%</dd><p>同上</p></div>
-        </dl>
-      </div>
-    </article>
-
-    <article class="biz-row biz-row--rev" id="biz04">
-      <div class="biz-row__img reveal"><div class="img-zoom" style="background-image:url(images/biz04.jpg)"></div></div>
-      <div class="biz-row__body reveal">
-        <p class="biz-row__num"><span>04</span>Construction Management</p>
-        <h3 class="biz-row__title">施工管理事業</h3>
-        <p class="biz-row__catch">現場の「当たり前」を、確実に守り抜く。</p>
-        <p class="biz-row__text">商業施設の内装改装をはじめとする建設現場で、施工管理を担います。営業中の施設での夜間工事など制約の多い現場でも、徹底した工程管理と安全管理で工期を守ります。自社で現場を持つ知見は、建設業界特化の採用支援にも活かされています。</p>
-        <ul class="biz-row__list">
-          <li>施工管理（工程・品質・安全・原価）</li>
-          <li>商業施設・オフィス等の内装改装工事</li>
-          <li>施工管理技術者の育成・配置</li>
-        </ul>
-        <dl class="biz-row__kpi">
-          <div><dt>工期遵守率</dt><dd>100%</dd><p>大手デベロッパー様 商業施設改装</p></div>
-          <div><dt>労働災害</dt><dd>ZERO</dd><p>無事故無災害で完工</p></div>
-        </dl>
-      </div>
-    </article>
-  </div>
 </section>
 
 <!-- ============ NUMBERS ============ -->
@@ -391,32 +338,6 @@
   </div>
 </section>
 
-<!-- ============ NEWS ============ -->
-<section class="news" id="news">
-  <div class="container news__grid">
-    <div class="news__head reveal">
-      <p class="label">News</p>
-      <h2 class="sec-title">ニュース</h2>
-      <a href="#" class="link-arrow">ニュース一覧へ</a>
-    </div>
-    <div class="news__body reveal">
-      <div class="news__tabs" role="tablist">
-        <button class="is-active" data-cat="all">すべて</button>
-        <button data-cat="info">お知らせ</button>
-        <button data-cat="biz">事業</button>
-        <button data-cat="press">プレスリリース</button>
-      </div>
-      <ul class="news__list" id="newsList">
-        <li data-cat="info"><a href="#"><time>2026.09.29</time><span class="news__cat">お知らせ</span><span class="news__title">コーポレートサイトをリニューアルしました</span></a></li>
-        <li data-cat="biz"><a href="#"><time>2026.09.29</time><span class="news__cat">事業</span><span class="news__title">事業領域を「人材アウトソーシング」「採用/営業/DX伴走支援」「通信イベント事業」「施工管理事業」の4事業に再編しました</span></a></li>
-        <li data-cat="press"><a href="#"><time>2026.00.00</time><span class="news__cat">プレスリリース</span><span class="news__title">【ダミー】業界特化型採用BPO「建設/採用部」のサービス内容を拡充</span></a></li>
-        <li data-cat="info"><a href="#"><time>2026.00.00</time><span class="news__cat">お知らせ</span><span class="news__title">【ダミー】協業エージェントの募集を開始しました</span></a></li>
-        <li data-cat="biz"><a href="#"><time>2026.00.00</time><span class="news__cat">事業</span><span class="news__title">【ダミー】通信イベント事業の対応エリアを拡大しました</span></a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <!-- ============ RECRUIT ============ -->
 <section class="recruit" id="recruit">
   <a href="#contact" class="recruit__banner reveal">
@@ -526,10 +447,10 @@
         </dl>
         <dl>
           <dt><a href="#business">事業内容</a></dt>
-          <dd><a href="#biz01">人材アウトソーシング</a></dd>
-          <dd><a href="#biz02">採用／営業／DX伴走支援</a></dd>
-          <dd><a href="#biz03">通信イベント事業</a></dd>
-          <dd><a href="#biz04">施工管理事業</a></dd>
+          <dd><a href="business/hr-outsourcing.html">人材アウトソーシング</a></dd>
+          <dd><a href="business/growth-support.html">採用／営業／DX伴走支援</a></dd>
+          <dd><a href="business/telecom-event.html">通信イベント事業</a></dd>
+          <dd><a href="business/construction.html">施工管理事業</a></dd>
         </dl>
         <dl>
           <dt><a href="#cases">実績・プロダクト</a></dt>
@@ -557,6 +478,6 @@
   <a href="#top" class="pagetop" aria-label="ページトップへ"></a>
 </footer>
 
-<script src="js/main.js?v=3"></script>
+<script src="js/main.js?v=4"></script>
 </body>
 </html>
